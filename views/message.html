@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh"xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{/lib/element-ui/lib/theme-chalk/index.css}">
+    <link rel="stylesheet" th:href="@{/css/main22.css}">
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css ">
+        <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js "></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js "></script>
+        <script src="http://cdn.bootcss.com/bootstrap-hover-dropdown/2.0.10/bootstrap-hover-dropdown.min.js  "></script>
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/msg-reply.css">
+    <link rel="stylesheet" href="../css/msg-up.css">
+    <link rel="stylesheet" href="../css/msg.css">
+</head>
+<body>
+    <div class="header"></div>
+    <div class="lefter">
+        <div style="margin:13% 14%"> 消息中心</div><br>
+
+        <ul class="nav nav-tabs" id="myTab">
+                <li id="liner" class="active"><a href="#tab1" data-toggle="tab">我的回复</a></li>
+                <li id="liner"><a href="#tab3" data-toggle="tab">收到的赞</a></li>
+                <li id="liner"><a onclick="vm.login()">我的消息</a></li>
+        </ul>
+    </div>
+    <div class="righter">
+
+    <div id="myTabContent" class="tab-content">
+
+        <!-- 我的回复 -->
+              <div class="tab-pane active " id="tab1">
+                <div id="msg">
+                    <div class="top">
+                            <p>我的回复</p>
+                    </div>
+                    <div class="bottom">
+                        <div class="blank"></div>
+                        <ul>
+                            <li v-for="kit in kits">
+                                <div class="hfleft">
+                                    <img src="./images/20140324112654_JvVHf.thumb.700_0.jpeg" alt="">
+                                </div>
+                                <div class="hfright">
+                                        <div class="title">
+                                           <h3><a href="#">{{kit.name}}</a></h3>
+                                           <p>对我发表了评论</p>
+                                        </div>
+                                        <div class="content">
+                                            <p>{{kit.content}}</p>
+                                        </div>
+                                        <div class="last">
+                                            <div class="time">
+                                                <p>{{kit.time}}</p>
+                                            </div>
+                                            <div class="putton">
+                                                <a href="#"><span class="iconfont">&#xe663;</span></a>
+                                                <p>回复</p>
+                                            </div>
+                                            <div class="putton">
+                                                    <a href="#"><span class="iconfont">&#xe635;</span></a>
+                                                    <p>删除</p>
+                                                </div>
+                                        </div>
+                                        <div class="blanker">
+                                        </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+              </div>
+            </div>
+
+
+         <!-- 我的点赞 -->
+              <div class="tab-pane" id="tab3">
+                    <div class="top">
+                            <p>收到的赞</p>
+                    </div>
+                    <div class="upbottom">
+                            <div id="up">
+                            <div class="blank"></div>
+                            <ul>
+                                <li v-for="kit in kits">
+                                    <div class="dzleft">
+                                        <img src="./images/20140324112654_JvVHf.thumb.700_0.jpeg" alt="">
+                                    </div>
+                                    <div class="hfright">
+                                        <div class="contenter"></div>
+                                            <div class="title">
+                                               <h3><a href="#">{{kit.name}}</a></h3>
+                                               <p>对我点了赞</p>
+                                            </div>
+                                            <div class="last">
+                                                <div class="time">
+                                                    <p>{{kit.time}}</p>
+                                                </div>
+                                            </div>
+                                            <div class="blanker">
+                                            </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+              </div>
+     </div>
+    </div>
+    <script src="../js/msg.js"></script>
+    <script src="../js/vue.js"></script>
+    <script th:src="@{/lib/vue-resources.min.js}"></script>
+    <script th:src="@{/lib/element-ui/lib/index.js}"></script>
+    <script th:src="@{/js/api.js}"></script>
+    <script th:src="@{/js/index.js}"></script>
+    <script th:src="@{/js/login.js}"></script>
+</body>
+</html>

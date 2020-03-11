@@ -1,0 +1,127 @@
+.left{
+    width:58%;
+    height: 100%;
+    margin-left: 2%;
+}
+.left .JG{
+    width:100%;
+    height: 22px;
+}
+.mediuma{
+    float:left;width: 2px;height: 910px; background: grey;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.left .lefttop{
+    width:100%;
+    height:45px;
+    margin-bottom: 1%;
+    background-color: #fff;
+    border-radius: 15PX;
+    border: 1px;
+    border-style: solid;
+    padding: 0;
+    box-shadow: darkgrey 10px 10px 30px 5px ;
+}
+.left .lefttop p{
+    margin-top: 1%;
+    margin-left: 1%;
+}
+.left ul{
+    margin:0 auto;
+    padding: 0;
+    list-style: none;
+}
+.left ul li{
+    margin:0 auto;
+    padding: 0;
+    list-style: none;
+}
+.left  ul li .main{
+    margin-top:2%;
+    width:100%;
+    background-color: white;
+    list-style: none;
+    border-radius: 15px;
+    display: inline-block;
+}
+.left ul li .main .leftmod{
+    border-radius: 15px;
+    width:15%;
+    background-color: #E5E5E5;
+    float: left;
+}
+.left ul li .main .leftmod .block{
+    width:100%;
+    height: 80px;
+    text-align: center;
+}
+.left ul li .main .leftmod .blocker{
+    width:100%;
+    height: 40px;
+    text-align: center;
+}
+.left ul li .main .leftmod .block a{
+    font-size: 1em;
+}
+.left ul li .main .leftmod img{
+    margin-top: 5%;
+    width:80%; height:80%; border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;
+}
+.left ul li .main .rightmod{
+    width:85%;
+    margin-left: 15%;
+    min-height: 250px;
+}
+.left ul li .main .rightmod .blaank{
+    width:100%;
+    height:20px;
+}
+.left ul li .main .rightmod .cont{
+    width: 100%;
+}
+
+a{
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+body{
+    background-color: #F2F2F2;
+}
+p{
+    margin:0 auto;
+    float: left;
+}
+h3{
+    margin:0 auto;
+    float: left;
+}
+h1{
+    margin:0 auto;
+    padding: 0;
+    float: left;
+}
+h2{
+    margin:0 auto;
+    padding: 0;
+    float: left;
+}
+.box{
+margin-bottom:1%;
+float:left;
+}
+.blank{
+width:5%;
+height: 100%;
+}
+.headers{
+width: 100%;
+height: 70px;
+margin-bottom: 1%;
+}
+
+#blogContent{
+    text-align:left;
+    margin-left:3%;
+    margin-right:3%;
+}

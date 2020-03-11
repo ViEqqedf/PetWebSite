@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8" />
+    <title>发布新文章</title>
+
+    <link rel="stylesheet" href="../css/post-arti.css"/>
+    <link rel="stylesheet" href="../plugins/editor-markdown-master/src/main/resources/static/editor/css/style.css"/>
+    <link rel="stylesheet" href="../plugins/editor-markdown-master/src/main/resources/static/editor/css/editormd.css"/>
+    <link rel="shortcut icon" href="https://pandao.github.io/editor.md/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/iconfont.css"/>
+
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../plugins/editor-markdown-master/src/main/resources/static/editor/editormd.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap-hover-dropdown/2.0.10/bootstrap-hover-dropdown.min.js"></script>
+    <script src="../js/vue.js"></script>
+
+</head>
+<body id="bodyT">
+
+<div id="header">
+    <header-logined
+            v-bind:username="username"
+            v-bind:avatar="avatar"
+    ></header-logined>
+</div>
+<script src="../js/header.js"></script>
+
+<div id="layout">
+    <header>
+        <div id="wtitle">
+            <h1>发布新文章</h1>
+        </div>
+        <br>
+    </header>
+    <form id="form">
+        <div class="form-group">
+            <label id="titleLabel"><i class="icon iconfont">&#xe667;</i> 帖子标题</label>
+            <input type="text" class="form-control" name="titleInput" id="titleInput" />
+        </div>
+        <div id="test-editormd">
+            <textarea style="display:none;" id="textContent" name="textContent"></textarea>
+        <!-- 第二个隐藏文本域，用来构造生成的HTML代码，方便表单POST提交，这里的name可以任意取，后台接受时以这个name键为准 -->
+            <textarea id="text" class="editormd-html-textarea" name="text"></textarea>
+        </div>
+        <div style="margin-left: 5%;">
+            <label class="glyphicon glyphicon-camera" style="font-weight: bold;margin-bottom: 10px"> 标题图片</label><br>
+            <!--<input class="btn btn-default" type="file" id="test-image-file" name="test" accept="image/jpeg, image/png, image/jpg">-->
+            <input type="text" id="titleImage" name="titleImage"  style="height:33px;"/>
+            <button class="btn btn-default" onclick="testEditor.titleImageDialog(); return false;">上传图片</button><br><br>
+            <label class="glyphicon glyphicon-list-alt" style="font-weight: bold;margin-bottom: 10px"> 分类</label>
+            <select class="form-control" style="width:15%" id="artiClass">
+                <option>猫</option>
+                <option>狗</option>
+                <option>鼠</option>
+                <option>鸟</option>
+                <option>水生</option>
+                <option>其他</option>
+            </select><br>
+            <button  onclick="saveHtml()" class="btn btn-primary" style="background-color: rgb(0,136,204)">发布</button>
+        </div>
+    </form>
+</div>
+
+<script src="../plugins/editor-markdown-master/src/main/resources/static/editor/plugins/title-image-dialog/title-image-dialog.js"></script>
+<script src="../js/post-arti.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+.right{
+    width:20%;
+    height: 390px;
+    background-color: #E5E5E5;
+    box-shadow: darkgrey 10px 10px 30px 5px ;
+    border-radius: 15px;
+    margin-bottom: 3%;
+    background-color: white;
+}
+.right   .top{
+    width:100%;
+    height: 40%;
+    background-color: white;
+    border-radius: 15px;
+}
+.right  .top img{
+    margin-left: 0%;
+    margin-top: 3%;
+    width:200px; height:200px; border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;
+}
+.right   .medium{
+    width:100%;
+    height: 70%;
+
+}
+.right  .medium .blank{
+    width: 100%;
+    height: 20%;
+    background-color: #EEEEEE;
+}
+.right   .medium .link{
+    width:100%;
+    height:18%;
+    background-color: #EEEEEE;
+}
+.right  .medium .link h3{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.right  .medium .link h3 a{
+    font-family:Arial,Helvetica,sans-serif;font-size:1.5em;
+}
+.right  .medium .bottom{
+    width: 100%;
+    height: 62%;
+    background-color:#E5E5E5;
+}
+.right   .medium .bottom p{
+    width: 50%;
+    height: 20%;
+    text-align: right;
+    font-weight:bold;
+    background-color:#E5E5E5;
+}
+.right   .medium .bottom h3{
+    width: 50%;
+    height: 20%;
+    text-align: left;
+    background-color:#E5E5E5;
+}
+.right  .medium .bottom h2{
+    width: 50%;
+    height: 20%;
+    text-align: center;
+
+}
+.right  .medium .bottom h1{
+    width: 50%;
+    height: 60%;
+    text-align: center;
+    font-size: 3em;
+}
+
+.right .downtop{
+    width: 100%;
+    height: 20%;
+}
+.right .downtop .downblank{
+    width: 100%;
+    height: 20%;
+}
+.right .downtop p{
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    font-size: 2em;
+}
+.right .downtop p a{
+    font: Tahoma,Helvetica,Arial,"\5b8b\4f53",sans-serif;
+}
+.right ul{
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 87%;
+}
+.right ul li{
+    padding: 0;
+    margin-left: 8%;
+    margin-bottom: 4%;
+    list-style: none;
+    width: 90%;
+}
+.right ul li a{
+    font-size: 1em;
+}
+.under{
+    margin-top:1%;
+    height:20px;
+    width:20%;
+}
+.under button{
+    width:100px;
+    height: 40px;
+    background-color: #286090;
+}
+.btn-primary {
+color: #fff;
+background-color: #337ab7;
+border-color: #2e6da4;
+border-radius: 9px;
+outline: none;
+}

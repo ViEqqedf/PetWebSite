@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Cache-Control" content="no-siteapp"/>
+        <title>HTML Preview(markdown to html) - Editor.md examples</title>
+        <style>
+            .editormd-html-preview {
+                width: 90%;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="layout">
+            <div id="test-editormd-view2">
+               <textarea style="display:none;" name="test-editormd-markdown-doc">
+                    {{vm.content}}
+               </textarea>
+            </div>
+        </div>
+        <!-- <script src="js/zepto.min.js"></script>
+		<script>
+			var jQuery = Zepto;  // 为了避免修改flowChart.js和sequence-diagram.js的源码，所以使用Zepto.js时想支持flowChart/sequenceDiagram就得加上这一句
+		</script> -->
+        <script src="js/jquery.min.js"></script>
+        <script src="../plugins/editor-markdown-master/src/main/resources/static/editor/lib/marked.min.js"></script>
+        <script src="../plugins/editor-markdown-master/src/main/resources/static/editor/lib/prettify.min.js"></script>
+
+        <script src="../plugins/editor-markdown-master/src/main/resources/static/editor/lib/raphael.min.js"></script>
+        <script src="../plugins/editor-markdown-master/src/main/resources/static/editor/lib/underscore.min.js"></script>
+        <script src="../plugins/editor-markdown-master/src/main/resources/static/editor/lib/sequence-diagram.min.js"></script>
+        <script src="../plugins/editor-markdown-master/src/main/resources/static/editor/lib/flowchart.min.js"></script>
+        <script src="../plugins/editor-markdown-master/src/main/resources/static/editor/lib/jquery.flowchart.min.js"></script>
+        <script src="../plugins/editor-markdown-master/src/main/resources/static/editor/editormd.min.js"></script>
+        <script src="../js/vue.js"></script>
+        <script type="text/javascript">
+            $(function() {
+
+                var vm = new Vue({
+                    el: '#content',
+                    data: {
+                        "title": "",
+                        "author": "",
+                        "content": "",
+                        "createTime": "",
+                    }
+                });
+
+                $.ajax({
+                    url: "",
+                    type: "post",
+                    async: true,
+                    processData: false,
+                    success: function (blog) {
+                        console.log("接收到的是:" + blog.content);
+                        vm.title = blog.title;
+                        vm.author = blog.author;
+                        vm.content = blog.content;
+                        vm.createTime = blog.createTime;
+                    },
+                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                        alert(XMLHttpRequest.status);
+                        alert(XMLHttpRequest.readyState);
+                        alert(textStatus);
+                        return false;// paser error;
+                    }
+                });
+
+                var testEditormdView2;
+
+                testEditormdView2 = editormd.markdownToHTML("test-editormd-view2", {
+                    htmlDecode      : "style,script,iframe",  // you can filter tags decode
+                    emoji           : true,
+                    taskList        : true,
+                    tex             : true,  // 默认不解析
+                    flowChart       : true,  // 默认不解析
+                    sequenceDiagram : true,  // 默认不解析
+                });
+            });
+        </script>
+
+    </body>
+</html>

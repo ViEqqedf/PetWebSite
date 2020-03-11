@@ -1,0 +1,41 @@
+#search-button{
+    border-right: none;
+    border-radius: 25px 0px 0px 25px;
+}
+
+#search-text{
+    border-left: none;
+    height:36.5px;
+    border-radius: 0px 25px 25px 0px;
+    box-shadow: none;
+}
+
+#logo{
+    padding-top: 5.5px;
+}
+
+#button-distance{
+    margin-right: 40px;
+    border-radius: 25px;
+}
+
+#button-distance-user{
+    margin-right: 10px;
+    border-radius: 25px;
+
+}
+
+#button-user{
+    background-color: white;
+}
+
+.popover-content{
+    padding: 0px;
+    width: 300px;
+    font-size: small;
+}
+
+#popOverBox a{
+    border: none;
+    padding: 7px 12px;
+}

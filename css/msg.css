@@ -1,0 +1,45 @@
+body{
+    background: url(../img/timg.jpg) bottom center no-repeat #efeff4 ;
+            background-size: 100% 100%;
+            width: 100%;
+            height: 100%;
+}
+h3{
+    margin: 0 auto;
+    padding: 0;
+}
+a:hover{
+    color: red;
+}
+.header{
+    width: 100%;
+    height:100px;
+    background-color: black;
+}
+.lefter{
+    margin-top:1%;
+    width: 7%;
+    height: 500px;
+    background-color: #FDFDFD;
+    float: left;
+    margin-left: 20%;
+    border-radius: 15px;
+    opacity: 0.85;
+}
+.lefter .top{
+    width: 100%;
+    height: 110px;
+}
+.lefter .top img{
+    width: 80%;
+    height: 80%;
+    margin-top:10%;
+    margin-left: 10%;
+}
+#liner{
+    width:100%;
+    margin-left:0px;
+    margin-right: 0px;
+    height: 50px;
+    padding-bottom: 10px;
+}

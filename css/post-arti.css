@@ -1,0 +1,19 @@
+#wtitle{
+    border-left: 10px solid rgb(0,136,204);
+    padding-left: 20px;
+    margin-top: 50px;
+}
+
+#titleInput{
+    width:90%;
+    align: center;
+    margin: auto;
+}
+
+#titleLabel{
+    margin-left: 5%;
+}
+
+#bodyT{
+    background-color: rgb(244,244,244);
+}

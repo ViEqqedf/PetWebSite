@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宠物情缘</title>
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>-->
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap-hover-dropdown/2.0.10/bootstrap-hover-dropdown.min.js"></script>
+    <script src="../js/vue.js"></script>
+    <script src="../js/bootstrap-waterfall.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../css/htmleaf-demo.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+
+</head>
+<body>
+<div id="header">
+    <header-logined
+            v-bind:username="username"
+            v-bind:avatar="avatar"
+    ></header-logined>
+</div>
+<script src="../js/header.js"></script>
+
+<div class="jumbotron" style="background-image: url(./images/board.jpg)">
+    <div class="container" style="height:620px">
+        <br><br><br><br><br><br>
+        <h1>宠物情缘</h1>
+        <p>Where you can share your pets.<br>
+        Powered by creators everywhere.</p>
+    </div>
+</div>
+
+<div class="htmleaf-container" style="margin-top:50px;">
+    <div class="container">
+        <div class="waterfall">
+            <!--测试用，当可以抓取到后台数据时，可以把这个"div中的内容"全部删除-->
+            <ul class="pin list-group">
+                <li class="list-group-item">
+                    <a href="javascript:;">
+                        <img src="images/1.jpg" />
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-default btn-xs" title="thumb up"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                    <button type="button" class="btn btn-default btn-xs" title="thumb down"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+                    <button type="button" class="btn btn-default btn-xs pull-right" title="pin"><span class="glyphicon glyphicon-pushpin"></span></button>
+                </li>
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="javascript:;">
+                                <img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/avatar_30.png" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading">Liber</h5>
+                            <small>I love this pin!</small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pin list-group">
+                <li class="list-group-item">
+                    <a href="javascript:;">
+                        <img src="images/2.jpg" />
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-default btn-xs" title="thumb up"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                    <button type="button" class="btn btn-default btn-xs" title="thumb down"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+                    <button type="button" class="btn btn-default btn-xs pull-right" title="pin"><span class="glyphicon glyphicon-pushpin"></span></button>
+                </li>
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="javascript:;">
+                                <img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/avatar_30.png" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading">Liber</h5>
+                            <small>I love this pin!</small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pin list-group">
+                <li class="list-group-item">
+                    <a href="javascript:;">
+                        <img src="images/3.jpg" />
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-default btn-xs" title="thumb up"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                    <button type="button" class="btn btn-default btn-xs" title="thumb down"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+                    <button type="button" class="btn btn-default btn-xs pull-right" title="pin"><span class="glyphicon glyphicon-pushpin"></span></button>
+                </li>
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="javascript:;">
+                                <img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/avatar_30.png" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading">Liber</h5>
+                            <small>I love this pin!</small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pin list-group">
+                <li class="list-group-item">
+                    <a href="javascript:;">
+                        <img src="images/4.jpg" />
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-default btn-xs" title="thumb up"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                    <button type="button" class="btn btn-default btn-xs" title="thumb down"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+                    <button type="button" class="btn btn-default btn-xs pull-right" title="pin"><span class="glyphicon glyphicon-pushpin"></span></button>
+                </li>
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="javascript:;">
+                                <img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/avatar_30.png" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading">Liber</h5>
+                            <small>Awesome! I love this pin!I love this pin!</small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pin list-group">
+                <li class="list-group-item">
+                    <a href="javascript:;">
+                        <img src="images/5.jpg" />
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-default btn-xs" title="thumb up"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                    <button type="button" class="btn btn-default btn-xs" title="thumb down"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+                    <button type="button" class="btn btn-default btn-xs pull-right" title="pin"><span class="glyphicon glyphicon-pushpin"></span></button>
+                </li>
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="javascript:;">
+                                <img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/avatar_30.png" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading">Liber</h5>
+                            <small>How about this? Awesome! I love this pin!</small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pin list-group">
+                <li class="list-group-item">
+                    <a href="javascript:;">
+                        <img src="images/6.jpg" />
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-default btn-xs" title="thumb up"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                    <button type="button" class="btn btn-default btn-xs" title="thumb down"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+                    <button type="button" class="btn btn-default btn-xs pull-right" title="pin"><span class="glyphicon glyphicon-pushpin"></span></button>
+                </li>
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="javascript:;">
+                                <img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/avatar_30.png" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading">Liber</h5>
+                            <small>I love this pin!I love this pin!</small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pin list-group">
+                <li class="list-group-item">
+                    <a href="javascript:;">
+                        <img src="images/7.jpg" />
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-default btn-xs" title="thumb up"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                    <button type="button" class="btn btn-default btn-xs" title="thumb down"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+                    <button type="button" class="btn btn-default btn-xs pull-right" title="pin"><span class="glyphicon glyphicon-pushpin"></span></button>
+                </li>
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="javascript:;">
+                                <img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/avatar_30.png" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading">Liber</h5>
+                            <small>How about this? Awesome! I love this pin!I love this pin!</small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pin list-group">
+                <li class="list-group-item">
+                    <a href="javascript:;">
+                        <img src="images/8.jpg" />
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-default btn-xs" title="thumb up"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                    <button type="button" class="btn btn-default btn-xs" title="thumb down"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+                    <button type="button" class="btn btn-default btn-xs pull-right" title="pin"><span class="glyphicon glyphicon-pushpin"></span></button>
+                </li>
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="javascript:;">
+                                <img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/avatar_30.png" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading">Liber</h5>
+                            <small>I love this pin!I love this pin!</small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pin list-group">
+                <li class="list-group-item">
+                    <a href="javascript:;">
+                        <img src="images/9.jpg" />
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-default btn-xs" title="thumb up"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                    <button type="button" class="btn btn-default btn-xs" title="thumb down"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+                    <button type="button" class="btn btn-default btn-xs pull-right" title="pin"><span class="glyphicon glyphicon-pushpin"></span></button>
+                </li>
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="javascript:;">
+                                <img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/avatar_30.png" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading">Liber</h5>
+                            <small>How about this? Awesome! I love this pin!</small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pin list-group">
+                <li class="list-group-item">
+                    <a href="javascript:;">
+                        <img src="images/10.jpg" />
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-default btn-xs" title="thumb up"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                    <button type="button" class="btn btn-default btn-xs" title="thumb down"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+                    <button type="button" class="btn btn-default btn-xs pull-right" title="pin"><span class="glyphicon glyphicon-pushpin"></span></button>
+                </li>
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="javascript:;">
+                                <img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/avatar_30.png" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading">Liber</h5>
+                            <small>How about this? Awesome! I love this pin!I love this pin!</small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pin list-group">
+                <li class="list-group-item">
+                    <a href="javascript:;">
+                        <img src="images/11.jpg" />
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-default btn-xs" title="thumb up"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                    <button type="button" class="btn btn-default btn-xs" title="thumb down"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+                    <button type="button" class="btn btn-default btn-xs pull-right" title="pin"><span class="glyphicon glyphicon-pushpin"></span></button>
+                </li>
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="javascript:;">
+                                <img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/avatar_30.png" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading">Liber</h5>
+                            <small>This is very cool! </small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pin list-group">
+                <li class="list-group-item">
+                    <a href="javascript:;">
+                        <img src="images/12.jpg" />
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-default btn-xs" title="thumb up"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                    <button type="button" class="btn btn-default btn-xs" title="thumb down"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+                    <button type="button" class="btn btn-default btn-xs pull-right" title="pin"><span class="glyphicon glyphicon-pushpin"></span></button>
+                </li>
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="javascript:;">
+                                <img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/avatar_30.png" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading">Liber</h5>
+                            <small>This is very cool! </small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pin list-group">
+                <li class="list-group-item">
+                    <a href="javascript:;">
+                        <img src="images/1.jpg" />
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-default btn-xs" title="thumb up"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                    <button type="button" class="btn btn-default btn-xs" title="thumb down"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+                    <button type="button" class="btn btn-default btn-xs pull-right" title="pin"><span class="glyphicon glyphicon-pushpin"></span></button>
+                </li>
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="javascript:;">
+                                <img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/avatar_30.png" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading">Liber</h5>
+                            <small>I love this pin!</small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pin list-group">
+                <li class="list-group-item">
+                    <a href="javascript:;">
+                        <img src="images/2.jpg" />
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-default btn-xs" title="thumb up"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                    <button type="button" class="btn btn-default btn-xs" title="thumb down"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+                    <button type="button" class="btn btn-default btn-xs pull-right" title="pin"><span class="glyphicon glyphicon-pushpin"></span></button>
+                </li>
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="javascript:;">
+                                <img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/avatar_30.png" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading">Liber</h5>
+                            <small>I love this pin!</small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pin list-group">
+                <li class="list-group-item">
+                    <a href="javascript:;">
+                        <img src="images/3.jpg" />
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-default btn-xs" title="thumb up"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                    <button type="button" class="btn btn-default btn-xs" title="thumb down"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+                    <button type="button" class="btn btn-default btn-xs pull-right" title="pin"><span class="glyphicon glyphicon-pushpin"></span></button>
+                </li>
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="javascript:;">
+                                <img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/avatar_30.png" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading">Liber</h5>
+                            <small>I love this pin!</small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pin list-group">
+                <li class="list-group-item">
+                    <a href="javascript:;">
+                        <img src="images/4.jpg" />
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-default btn-xs" title="thumb up"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                    <button type="button" class="btn btn-default btn-xs" title="thumb down"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+                    <button type="button" class="btn btn-default btn-xs pull-right" title="pin"><span class="glyphicon glyphicon-pushpin"></span></button>
+                </li>
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="javascript:;">
+                                <img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/avatar_30.png" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading">Liber</h5>
+                            <small>Awesome! I love this pin!I love this pin!</small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pin list-group">
+                <li class="list-group-item">
+                    <a href="javascript:;">
+                        <img src="images/5.jpg" />
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-default btn-xs" title="thumb up"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                    <button type="button" class="btn btn-default btn-xs" title="thumb down"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+                    <button type="button" class="btn btn-default btn-xs pull-right" title="pin"><span class="glyphicon glyphicon-pushpin"></span></button>
+                </li>
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="javascript:;">
+                                <img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/avatar_30.png" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading">Liber</h5>
+                            <small>How about this? Awesome! I love this pin!</small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pin list-group">
+                <li class="list-group-item">
+                    <a href="javascript:;">
+                        <img src="images/6.jpg" />
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-default btn-xs" title="thumb up"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                    <button type="button" class="btn btn-default btn-xs" title="thumb down"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+                    <button type="button" class="btn btn-default btn-xs pull-right" title="pin"><span class="glyphicon glyphicon-pushpin"></span></button>
+                </li>
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="javascript:;">
+                                <img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/avatar_30.png" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading">Liber</h5>
+                            <small>I love this pin!I love this pin!</small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pin list-group">
+                <li class="list-group-item">
+                    <a href="javascript:;">
+                        <img src="images/7.jpg" />
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-default btn-xs" title="thumb up"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                    <button type="button" class="btn btn-default btn-xs" title="thumb down"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+                    <button type="button" class="btn btn-default btn-xs pull-right" title="pin"><span class="glyphicon glyphicon-pushpin"></span></button>
+                </li>
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="javascript:;">
+                                <img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/avatar_30.png" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading">Liber</h5>
+                            <small>How about this? Awesome! I love this pin!I love this pin!</small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pin list-group">
+                <li class="list-group-item">
+                    <a href="javascript:;">
+                        <img src="images/8.jpg" />
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-default btn-xs" title="thumb up"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                    <button type="button" class="btn btn-default btn-xs" title="thumb down"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+                    <button type="button" class="btn btn-default btn-xs pull-right" title="pin"><span class="glyphicon glyphicon-pushpin"></span></button>
+                </li>
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="javascript:;">
+                                <img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/avatar_30.png" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading">Liber</h5>
+                            <small>I love this pin!I love this pin!</small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pin list-group">
+                <li class="list-group-item">
+                    <a href="javascript:;">
+                        <img src="images/9.jpg" />
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-default btn-xs" title="thumb up"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                    <button type="button" class="btn btn-default btn-xs" title="thumb down"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+                    <button type="button" class="btn btn-default btn-xs pull-right" title="pin"><span class="glyphicon glyphicon-pushpin"></span></button>
+                </li>
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="javascript:;">
+                                <img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/avatar_30.png" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading">Liber</h5>
+                            <small>How about this? Awesome! I love this pin!</small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pin list-group">
+                <li class="list-group-item">
+                    <a href="javascript:;">
+                        <img src="images/10.jpg" />
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-default btn-xs" title="thumb up"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                    <button type="button" class="btn btn-default btn-xs" title="thumb down"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+                    <button type="button" class="btn btn-default btn-xs pull-right" title="pin"><span class="glyphicon glyphicon-pushpin"></span></button>
+                </li>
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="javascript:;">
+                                <img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/avatar_30.png" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading">Liber</h5>
+                            <small>How about this? Awesome! I love this pin!I love this pin!</small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pin list-group">
+                <li class="list-group-item">
+                    <a href="javascript:;">
+                        <img src="images/11.jpg" />
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-default btn-xs" title="thumb up"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                    <button type="button" class="btn btn-default btn-xs" title="thumb down"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+                    <button type="button" class="btn btn-default btn-xs pull-right" title="pin"><span class="glyphicon glyphicon-pushpin"></span></button>
+                </li>
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="javascript:;">
+                                <img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/avatar_30.png" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading">Liber</h5>
+                            <small>This is very cool! </small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pin list-group">
+                <li class="list-group-item">
+                    <a href="javascript:;">
+                        <img src="images/12.jpg" />
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <button type="button" class="btn btn-default btn-xs" title="thumb up"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+                    <button type="button" class="btn btn-default btn-xs" title="thumb down"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+                    <button type="button" class="btn btn-default btn-xs pull-right" title="pin"><span class="glyphicon glyphicon-pushpin"></span></button>
+                </li>
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="javascript:;">
+                                <img class="media-object img-rounded" style="width: 30px; height: 30px;" src="images/avatar_30.png" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="media-heading">Liber</h5>
+                            <small>This is very cool! </small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--<script id="waterfall-template" type="text/template"></script>-->
+
+<script>
+    <!--瀑布流插件配置-->
+    var times = 0;
+    $(document).ready(function () {
+        $('.waterfall').waterfall();
+        generatePins()
+    });
+
+    var generateMarkupsFromData = function (data) {
+        var markups = '';
+        for (var i = 0; i < data.length; i++) {
+            markups += '<ul class="list-group"> \
+                            <li class="list-group-item"> \
+                                <a href="javascript:;"> \
+                                <img src=\"data[i].titleImage\" /> \
+                         </a> \
+                     </li> \
+                     <li class="list-group-item"> \
+                         <div class="media"> \
+                             <div class="media-left"> \
+                                 <a href="javascript:;"> \
+                                     <img class="media-object img-rounded" style="width: 30px; height: 30px;" src=\"data[i].avator\" /> \
+                                 </a> \
+                             </div> \
+                             <div class="media-body"> \
+                                 <button type="button" class="btn btn-default btn-xs" title="thumb up" style="float:right"><span class="glyphicon glyphicon-thumbs-up"></span></button> \
+                                 <h5 class="media-heading">data[i].username</h5> \
+                                 <small>data[i].title</small> \
+                             </div> \
+                         </div> \
+                     </li> \
+                 </ul>';
+        }
+        return markups;
+    };
+
+    function generatePins(){
+
+        $.ajax({
+            url: "blogweb/getlast",
+            type: "post",
+            async: true,
+            data:{
+                "times": times
+            },
+            processData: false,
+            success: function (newData) {
+                // 拿到新的数据之后，把数据包装成markup的样子
+                var markups = generateMarkupsFromData(newData);
+                // 将markups添加到页面上
+                $('.waterfall').data('mystist.waterfall').addPins($(markups));
+                times += 1;
+                console.log(times);
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                console.log(XMLHttpRequest.status);
+                console.log(XMLHttpRequest.readyState);
+                console.log(textStatus);
+                return false;// paser error;
+            }
+        });
+
+    }
+
+    $('.waterfall').on('finishing.mystist.waterfall', function () {
+        // 发起ajax请求
+        /*var newData =  [{imageFileName: 1}, {imageFileName: 2},{imageFileName: 3},{imageFileName: 4},
+            {imageFileName: 5}, {imageFileName: 6},{imageFileName: 7},{imageFileName: 8},
+            {imageFileName: 9}, {imageFileName: 10},{imageFileName: 11},{imageFileName: 12},
+            {imageFileName: 13}, {imageFileName: 14},{imageFileName: 15},{imageFileName: 16},
+            {imageFileName: 17}, {imageFileName: 18},{imageFileName: 19},{imageFileName: 20},];*/
+        generatePins();
+    });
+    <!--到这里都是瀑布流配置-->
+
+</script>
+</body>
+</html>
